@@ -1,10 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  text-align: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,11 +9,11 @@
 }
 
 .App-header {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   font-size: calc(10px + 2vmin);
   color: white;
   background-color: #282c34;
@@ -36,4 +31,39 @@
   from {
     transform: rotate(0deg);
   }
+}
+
+.head-carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  background-color: aliceblue;
+}
+
+.box1 {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #61dafb;
+  border: solid;
+}
+
+.box2 {
+  flex: 2;
+  margin: 10px;
+}
+
+.box2 > p {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.box3 {
+  flex: 3;
+  margin: 10px;
 }
