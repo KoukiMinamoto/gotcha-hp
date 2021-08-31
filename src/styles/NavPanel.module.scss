@@ -1,0 +1,9 @@
+@mixin nav-panel {
+  width: 300px;
+  height: 600px;
+  background-color: darkgray;
+}
+
+.navpanel-appear {
+  @include nav-panel();
+}

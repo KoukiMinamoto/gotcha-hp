@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import HeadCarousel from 'HeadCarousel';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import NavPanel from 'NavPanel';
 
 const scrollAmount = (): number =>
   Math.max(
@@ -32,6 +33,10 @@ const App: FC = () => {
     <>
       <div className="back-ground"> </div>
       <HeadCarousel disapear={isScrollUp} />
+      <NavPanel title="私たちについて" contents="hogehoge">
+        <h2>私たちについて</h2>
+        <p>私たちについて説明しますよー</p>
+      </NavPanel>
     </>
   );
 };
